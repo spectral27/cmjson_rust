@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 pub struct Distribution {
 
     #[serde(default)]
-    id: u32,
+    id: i32,
     name: Option<String>
 
 }
@@ -19,11 +19,11 @@ impl Distribution {
         }
     }
 
-    pub fn id(&self) -> u32 {
+    pub fn id(&self) -> i32 {
         self.id
     }
 
-    pub fn set_id(&mut self, id: u32) {
+    pub fn set_id(&mut self, id: i32) {
         self.id = id;
     }
 

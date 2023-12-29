@@ -9,7 +9,7 @@ pub fn select_all() {
 }
 
 pub fn select(arg0: &str) {
-    let id = match arg0.parse::<u32>() {
+    let id = match arg0.parse::<i32>() {
         Ok(result) => result,
         Err(e) => panic!("{:?}", e)
     };
@@ -103,7 +103,7 @@ pub fn update(arg0: &str) {
 }
 
 pub fn delete(arg0: &str) {
-    let id = match arg0.parse::<u32>() {
+    let id = match arg0.parse::<i32>() {
         Ok(result) => result,
         Err(e) => panic!("{:?}", e)
     };
